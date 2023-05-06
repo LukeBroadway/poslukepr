@@ -1,0 +1,36 @@
+---
+name: contactform
+resource: contact
+resource_owner: anyone
+flash_alert: Please fix validation errors and try again
+fields:
+  properties:
+    phone:
+      validation: {presence: true}
+    email:
+      validation: {presence: true}
+---
+{% form %}
+  <fieldset>
+    <label for="phone">Phone Number</label>
+    <input
+      type="text"
+      name="form[properties_attributes][phone]"
+      id="phone"
+      required>
+  </fieldset>
+
+  <fieldset>
+    <label for="email">Email</label>
+    <input
+      type="text"
+      name="form[properties_attributes][email]"
+      id="email"
+      required>
+  </fieldset>
+
+  <fieldset>
+    <button class="button button-primary">Learn more</button>
+  </fieldset>
+
+{% endform %}
