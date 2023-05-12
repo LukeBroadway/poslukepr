@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="authenticity_token" name="csrf-param">
-    <meta content="{{ form_authenticity_token }}" name="csrf-token">
-
-    <title>Hello world! | platformOS</title>
-
     <link rel="stylesheet" href="{{ 'styles/app.css' | asset_url }}">
-  </head>
 
+    <title>To do list</title>
+  </head>
   <body>
+    <h1>My to do list</h1>
 
     {{ content_for_layout }}
-
-
-    <script src="{{ 'scripts/app.js' | asset_url }}"></script>
-
   </body>
 </html>
