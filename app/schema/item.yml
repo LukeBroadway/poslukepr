@@ -2,3 +2,7 @@ name: item
 properties:
   - name: title
     type: string
+  - name: phone_number
+    type: string
+  - name: email
+    type: string

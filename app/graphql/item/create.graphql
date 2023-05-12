@@ -1,15 +1,19 @@
 mutation item_create(
   $title: String!
+  $phone_number: String!
+  $email: String!
 ) {
   record: record_create(
     record: {
       table: "item"
       properties: [
-        { name: "title", value: $title }
+        { name: "title", value: $title }, { name: "phone_number", value: $phone_number }, { name: "email", value: $email }
       ]
     }
   ) {
     id
     title: property(name: "title")
+    phone_number: property(name: "phone_number")
+    email: property(name: "email")
   }
 }

@@ -27,7 +27,21 @@
 <!-- form for adding new item -->
 <form action="/item/create" method="post">
   <!--<input type="hidden" name="recipient" value="recipient-email-address@example.com">-->
-  <input type="text" name="title">
+  <fieldset>
+    <label for="title">Title</label>
+    <input type="text" name="title">
+  </fieldset>
+
+  <fieldset>
+    <label for="phone_number">Phone Number</label>
+    <input type="text" name="phone_number">
+  </fieldset>
+
+  <fieldset>
+    <label for="email">Email</label>
+    <input type="text" name="email">
+  </fieldset>
+
   <button type="submit">Add item</button>
 </form>
 

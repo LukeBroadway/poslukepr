@@ -12,6 +12,8 @@ query item_search {
     results {
       id
       title: property(name: "title")
+      phone_number: property(name: "phone_number")
+      email: property(name: "email")
     }
   }
 }
