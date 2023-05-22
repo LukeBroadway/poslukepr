@@ -1,0 +1,11 @@
+mutation sms_item_created(
+  $data: HashObject!
+) {
+  sms_send(
+    template: { name: "item/sms" }
+    data: $data
+  ) {
+    is_scheduled_to_send
+    errors { message }
+  }
+}
