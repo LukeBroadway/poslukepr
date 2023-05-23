@@ -8,6 +8,7 @@ method: post
 	if result.record.id
     	graphql email = 'item/email/created', data: context.params
       graphql sms = 'item/sms/smscreated', data: context.params
+      log sms
 		redirect_to '/'
 	else
 		echo 'Something went wrong'
